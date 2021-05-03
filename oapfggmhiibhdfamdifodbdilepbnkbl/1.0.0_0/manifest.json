@@ -1,0 +1,21 @@
+{
+   "content_scripts": [ {
+      "css": [ "css/bootstrap.min.css", "css/style.css", "css/bangers-font.css", "css/media.css" ],
+      "js": [ "js/jquery-3.5.1.min.js", "js/bootstrap.bundle.min.js", "js/jquery.countdown.js", "index.js" ],
+      "matches": [ "https://www.instagram.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://maxcdn.bootstrapcdn.com; object-src 'self';",
+   "description": "Automação de comentários",
+   "icons": {
+      "128": "./images/icon128.png",
+      "16": "./images/icon16.png",
+      "48": "./images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg7tILqM2GpCvj8XkmdYh3CC6oGgybApQMYNWyjfzIuavDCJD7Ak4/Nos0tWpQYFzwG5lKUrFMyp34m00bF5xts1gg60LQuF4tyxlTxfL51zoNvReZ6aw8EFHpF17RfUBRUNmKhv6pqFaj06YLWwPHp86DRuBCgq6AIRI5tfRniBKUXN+qqY4+fXoogHyOWvNdO74Jz6SoTEEQT6oO+sXD7Mm/OoLbWE35t6LmyeZ7Oosb8PndlHd1YjoZXwFTGTSBWdc+ZrxXbLLczlCvfmzOK6SLKN5PuEb+VxG+CPyxH1QvkCBNEBZQqiduW9YUCNCfdncRESESpPrld2hr/5+7QIDAQAB",
+   "manifest_version": 2,
+   "name": "Robô de comentários",
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0",
+   "web_accessible_resources": [ "images/*.png", "data/*.json", "fonts/*.woff2" ]
+}
